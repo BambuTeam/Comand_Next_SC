@@ -7,6 +7,17 @@
   src: url(../public/font/Gilroy-Black.ttf);
 }
 
+
+@font-face {
+  font-family: FontBody;
+  src: url(../public/font/Gilroy-Light.ttf);
+}
+
+@font-face {
+  font-family: FontInput;
+  src: url(../public/font/Gilroy-Medium.ttf);
+}
+
 :root {
   background-color: #eeeaea;
   padding: 10px;
@@ -18,12 +29,28 @@
   background-image: url(../public/images/home/bg_home.png);
   background-repeat: no-repeat;
   background-size: 50%;
-
- 
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: FontBlack;
   letter-spacing: 1px;
   font-size: 40px !important;
+}
+
+.Waiter{
+  float: right;
+  margin-right: -200px;
+}
+
+input{
+font-family: FontInput;
+ border-radius: 10px;
+ height: 52px;
+ padding: 30px;
+ color: rgb(2, 49, 33);
+
+}
+
+p{
+  font-family: FontBody;
 }
