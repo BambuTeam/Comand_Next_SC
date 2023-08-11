@@ -9,12 +9,12 @@ const LoginForm = () => {
         <div className="md:w-1/2">
           
         <Image className='Waiter'
-      src={Waiter}
-      width={500}
-      height={500}
-      alt="Waiter"
-      
-    />
+            src={Waiter}
+            width={500}
+            height={500}
+            alt="Waiter"
+            
+          />
         </div>
         <div className="md:w-1/2 p-4 md:p-8">
           
@@ -39,6 +39,9 @@ const LoginForm = () => {
               Continuar
             </button>
           </form>
+          <footer className="text-center text-gray-500 text-sm mt-10">
+          © <strong>2023</strong> BambuDev. Todos los derechos reservados.
+        </footer>
         </div>
       </div>
     );
