@@ -19,6 +19,7 @@
 }
 
 :root {
+  background-color: #fefefe;
   position: relative;
   margin: 0;
   padding: 0;
@@ -89,6 +90,11 @@
   }
 }
 
+.bg_login2{
+  color: #0C2902;
+
+}
+
 h1,h2,h3,h4,h5,h6{
   font-family: FontBlack;
   letter-spacing: 1px;
@@ -97,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
 
 .Waiter{
   float: right;
-  margin-right: -200px;
+  margin-right: -100px;
 }
 
 input{

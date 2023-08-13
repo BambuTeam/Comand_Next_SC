@@ -5,8 +5,9 @@ import Image from 'next/image'
 
 const LoginForm = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-center items-center h-screen bg_login">
-        <div className="md:w-1/2">
+        
+        <div className="flex flex-col md:flex-row justify-center items-center h-screen bg_login ">
+        <div className="md:w-1/2 bg_login2">
           
         <Image className='Waiter'
             src={Waiter}
