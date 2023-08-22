@@ -25,3 +25,38 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Estilos personalizados */
+.login-container {
+  @apply flex h-screen;
+
+  .welcome-section {
+    @apply w-1/2 bg-blue-500;
+  }
+
+  .form-section {
+    @apply w-1/2 bg-gray-100 flex items-center justify-center;
+
+    .login-form {
+      @apply w-4/5 p-6 bg-white rounded-lg shadow-md;
+
+      .form-title {
+        @apply text-2xl font-bold mb-4;
+      }
+
+      .form-input {
+        @apply w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500;
+      }
+
+      .remember-me {
+        @apply flex items-center mb-4;
+      }
+
+      .submit-button {
+        @apply w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300;
+      }
+    }
+  }
+}
+
+
