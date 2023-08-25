@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background-color: #131312;
+}
+
 /* @font-face {
   font-family: FontBlack;
   src: url(../public/font/Gilroy-Black.ttf);
