@@ -9,21 +9,15 @@ const LoginTest = () => {
   };
 
   return (
-    <div className='flex'>
-      <div className='w-1/2'>
-        <Image
-          src={Waiter}
-          alt='Picture of the author'
-          width='500'
-          height='500'
-          className='bg-mint text-mint fill-current'
-        ></Image>
+    <div className='bg_screen1 flex items-center justify-center'>
+      <div className='mt-10 flex h-screen w-1/2 items-center justify-center '>
+        <Image src={Waiter} alt='Picture of the author' height='500' width='500'></Image>
       </div>
 
-      <div>
+      <div className=' '>
         <button
           onClick={handleClick}
-          className=' focus:ring-white-600 bg-zinc-900 p-8 hover:bg-zinc-700 '
+          className=' rounded-lg bg-gradient-to-r from-teal-200 to-lime-200 px-5 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700'
         >
           Click To Loging
         </button>

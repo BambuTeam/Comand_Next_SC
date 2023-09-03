@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-  background-color: #131312;
+  background-color: #1c3532;
 }
 
+.bg_screen1 {
+  background-image: url(https://images.pexels.com/photos/5490933/pexels-photo-5490933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* @font-face {
   font-family: FontBlack;
   src: url(../public/font/Gilroy-Black.ttf);
