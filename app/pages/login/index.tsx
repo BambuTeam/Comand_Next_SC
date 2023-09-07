@@ -5,13 +5,7 @@ function index() {
   return (
     <div className='bg_login flex h-screen flex-col items-center justify-center md:flex-row '>
       <div className='bg_login2 md:w-1/2'>
-        <Image
-          className='Waiter'
-          src={'Waiter'}
-          width={500}
-          height={500}
-          alt='Waiter'
-        />
+        <Image className='Waiter' src={'Waiter'} width={500} height={500} alt='Waiter' />
       </div>
       <div className='p-4 md:w-1/2 md:p-8'>
         <form className='mx-auto max-w-md'>
@@ -43,18 +37,10 @@ function index() {
             />
           </div>
           <div className='mb-4 flex items-center'>
-            <input
-              type='checkbox'
-              id='remember'
-              name='remember'
-              className='mr-2'
-            />
+            <input type='checkbox' id='remember' name='remember' className='mr-2' />
             <label htmlFor='remember'>Recordar datos de inicio de sesión</label>
           </div>
-          <button
-            type='submit'
-            className='w-full rounded bg-blue-500 px-4 py-2 text-white'
-          >
+          <button type='submit' className='w-full rounded bg-blue-500 px-4 py-2 text-white'>
             Continuar
           </button>
         </form>

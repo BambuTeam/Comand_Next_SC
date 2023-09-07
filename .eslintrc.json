@@ -1,5 +1,5 @@
 {
-  "extends": [ "next", "prettier", "next/core-web-vitals","plugin:@next/next/recommended"],
+  "extends": ["next", "prettier", "next/core-web-vitals", "plugin:@next/next/recommended"],
   "plugins": ["prettier", "@tanstack/query"],
   "rules": {
     "prettier/prettier": "error",

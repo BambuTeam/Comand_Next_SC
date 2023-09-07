@@ -1,51 +1,56 @@
 import React from 'react';
-import Waiter from '../../public/Images/home/mesero.svg'
-import Image from 'next/image'
-import '../globals.css'
-
+import Waiter from '../public/Images/animation/animationhome.json';
+import Image from 'next/image';
+import '../globals.css';
 
 const LoginForm = () => {
-    return (
-        
-        <div className="flex flex-col md:flex-row justify-center items-center h-screen bg_login ">
-        <div className="md:w-1/2 bg_login2">
-          
-        <Image className='Waiter'
-            src={Waiter}
-            width={500}
-            height={500}
-            alt="Waiter"
-            
-          />
-        </div>
-        <div className="md:w-1/2 p-4 md:p-8">
-          
-          <form className="max-w-md mx-auto">
-            <h2 className="text-2xl font-bold mb-4">WELCOME</h2>
-            <p>Sing in with your email adress and password</p>
-            <br />
-            <div className="mb-4">
-              <label className="block mb-2 userinput" htmlFor="user">Usuario o Correo</label>
-              <input type="text" id="user" name="user" className="w-full p-2 border"  placeholder="User o Email"/>
-             
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2" htmlFor="password">Contraseña</label>
-              <input type="password" id="password" name="password" className="w-full p-2 border" placeholder="Password"/>
-            </div>
-            <div className="mb-4 flex items-center">
-              <input type="checkbox" id="remember" name="remember" className="mr-2" />
-              <label htmlFor="remember">Recordar datos de inicio de sesión</label>
-            </div>
-            <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded w-full">
-              Continuar
-            </button>
-          </form>
-          <footer className="text-center text-gray-500 text-sm mt-10">
+  return (
+    <div className='bg_login flex h-screen flex-col items-center justify-center md:flex-row '>
+      <div className='bg_login2 md:w-1/2'>
+        <Image className='Waiter' src={Waiter} width={500} height={500} alt='Waiter' />
+      </div>
+      <div className='p-4 md:w-1/2 md:p-8'>
+        <form className='mx-auto max-w-md'>
+          <h2 className='mb-4 text-2xl font-bold'>WELCOME</h2>
+          <p>Sing in with your email adress and password</p>
+          <br />
+          <div className='mb-4'>
+            <label className='userinput mb-2 block' htmlFor='user'>
+              Usuario o Correo
+            </label>
+            <input
+              type='text'
+              id='user'
+              name='user'
+              className='w-full border p-2'
+              placeholder='User o Email'
+            />
+          </div>
+          <div className='mb-4'>
+            <label className='mb-2 block' htmlFor='password'>
+              Contraseña
+            </label>
+            <input
+              type='password'
+              id='password'
+              name='password'
+              className='w-full border p-2'
+              placeholder='Password'
+            />
+          </div>
+          <div className='mb-4 flex items-center'>
+            <input type='checkbox' id='remember' name='remember' className='mr-2' />
+            <label htmlFor='remember'>Recordar datos de inicio de sesión</label>
+          </div>
+          <button type='submit' className='w-full rounded bg-blue-500 px-4 py-2 text-white'>
+            Continuar
+          </button>
+        </form>
+        <footer className='mt-10 text-center text-sm text-gray-500'>
           © <strong>2023</strong> BambuDev. Todos los derechos reservados.
         </footer>
-        </div>
       </div>
-    );
-  };
-  export default LoginForm;
+    </div>
+  );
+};
+export default LoginForm;
