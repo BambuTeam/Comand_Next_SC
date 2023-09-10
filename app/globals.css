@@ -3,14 +3,19 @@
 @tailwind utilities;
 
 :root {
-  background-color: #1c3532;
-}
-
-.bg_screen1 {
-  background: linear-gradient(-45deg, #036156, #0b5234, #16884f, #1c3532);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+.bg_screen1 {
+  background-image: url(../public/Images/bg_command.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes gradient {
