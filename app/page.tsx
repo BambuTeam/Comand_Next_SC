@@ -1,15 +1,16 @@
 'use client';
 import React from 'react';
-import { signOut, useSession } from 'next-auth/react';
+import { useSession } from 'next-auth/react';
+import LoginTest from './LoginTest';
+import HomeTest from './HomeTest';
 
 export default function Home() {
   const session = useSession();
+
   return (
     <main className='z-10 flex min-h-screen flex-col items-center justify-between p-24'>
-      <div>
-        <h1>{session?.data?.user?.name}</h1>
-        <button onClick={() => signOut()}>logout</button>
-      </div>
+      Welcome
+      {session.status === 'unauthenticated' ? <LoginTest /> : <HomeTest />}
     </main>
   );
 }
