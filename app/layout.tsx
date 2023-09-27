@@ -21,7 +21,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang='en'>
       <body>
         <SessionProvider session={session}>
-          <ReactQueryProvider>{!session ? <LoginTest /> : <HomeTest />}</ReactQueryProvider>
+          <ReactQueryProvider>
+            {/* <HomeTest /> */}
+            {children}
+          </ReactQueryProvider>
         </SessionProvider>
       </body>
     </html>
