@@ -5,12 +5,12 @@ import { GoAlertFill } from 'react-icons/go';
 
 const ComandaCard = ({ table, orderNumber }: comanda) => {
   return (
-    <div className='m-3 flex flex-row items-center justify-center rounded-md  bg-slate-400 px-3 py-4'>
-      <div className='flex flex-col items-center justify-center rounded-md '>
-        <p>
-          Numero de orden: # <span> {orderNumber}</span>
+    <div className='m-3 flex max-w-md flex-row items-center justify-between rounded-3xl  bg-gray-300 px-3 py-4'>
+      <div className='flex flex-col items-start justify-center  '>
+        <p className='text-lg font-bold text-green-950'>
+          Numero de orden: # <span className='text-gray-500'> {orderNumber}</span>
         </p>
-        <p>
+        <p className='text-lg font-bold text-green-950'>
           Numero de mesa: # <span> {table}</span>
         </p>
       </div>

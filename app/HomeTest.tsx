@@ -29,8 +29,9 @@ const HomeTest = () => {
   }
   return (
     <div className='bg-white'>
-      <div className='text-lg text-green-950'>
-        <h1>CONTROL DE COMANDAS</h1>
+      <div className=' text-lg text-green-950'>
+        <h1 className='px-2 py-3 m-4 text-[3.5rem]'>CONTROL DE COMANDAS</h1>
+        <hr className='text-green-950' />
       </div>
 
       {comandaData.map((comanda: comanda) => {
