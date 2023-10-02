@@ -9,7 +9,6 @@ export default function Home() {
 
   return (
     <main className='z-10 flex min-h-screen flex-col items-center justify-between p-24'>
-      Welcome
       {session.status === 'unauthenticated' ? <LoginTest /> : <HomeTest />}
     </main>
   );
