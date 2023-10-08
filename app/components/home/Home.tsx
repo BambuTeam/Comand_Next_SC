@@ -1,13 +1,8 @@
 'use client';
 import React from 'react';
 import { signOut, useSession } from 'next-auth/react';
-import ComandaCard from './components/dashboard/ComandaCard';
-
-//TODO: move this to a better place
-export type comanda = {
-  table: string;
-  orderNumber: string;
-};
+import ComandaCard from '@/components/dashboard/ComandaCard';
+import { comanda } from '@/utils/types';
 
 //TODO: Delete this test data after finish the desing
 const data_comandas: comanda[] = [
@@ -17,7 +12,7 @@ const data_comandas: comanda[] = [
   { table: 'a4', orderNumber: 'abcr' },
 ];
 
-const HomeTest = () => {
+const Home = () => {
   //TODO: make comandas fetch witch react query
   //TODO: load esqueleton with react query loading
   const comandaData = data_comandas;
@@ -50,4 +45,4 @@ const HomeTest = () => {
   );
 };
 
-export default HomeTest;
+export default Home;

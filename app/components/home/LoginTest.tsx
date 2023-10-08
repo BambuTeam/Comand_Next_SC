@@ -1,8 +1,9 @@
 'use client';
 import { signIn } from 'next-auth/react';
+// TODO: @quique esto sirver de algo ?
 /* import Waiter from '../public/Images/mesero.svg';
 import Image from 'next/image'; */
-import animation from '../public/Images/animation/animationhome.json';
+import animation from '@/public/Images/animation/animationhome.json';
 import Lottie from 'lottie-react';
 
 const LoginTest = () => {

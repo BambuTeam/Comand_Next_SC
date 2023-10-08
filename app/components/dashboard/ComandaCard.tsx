@@ -1,5 +1,5 @@
 import React from 'react';
-import { comanda } from '../../HomeTest';
+import { comanda } from '@/utils/types';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { GoAlertFill } from 'react-icons/go';
 
