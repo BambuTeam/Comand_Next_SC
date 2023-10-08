@@ -8,8 +8,10 @@ export default function Page() {
   const session = useSession();
 
   return (
-    <main className='z-10 flex min-h-screen flex-col items-center justify-between p-24'>
-      {session.status === 'unauthenticated' ? <LoginTest /> : <Home />}
+    <main>
+      <Home />
+      {/* TODO: habilitarlo luego de las preubas  */}
+      {/* {session.status === 'unauthenticated' ? <LoginTest /> : <Home />} */}
     </main>
   );
 }

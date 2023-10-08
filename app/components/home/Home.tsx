@@ -10,6 +10,48 @@ const data_comandas: comanda[] = [
   { table: 'a2', orderNumber: 'abce' },
   { table: 'a3', orderNumber: 'abc4' },
   { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
+  { table: 'a1', orderNumber: 'abcd' },
+  { table: 'a2', orderNumber: 'abce' },
+  { table: 'a3', orderNumber: 'abc4' },
+  { table: 'a4', orderNumber: 'abcr' },
 ];
 
 const Home = () => {
@@ -24,8 +66,8 @@ const Home = () => {
   }
   return (
     <div className='bg-white'>
-      <div className=' text-lg text-green-950'>
-        <h1 className='m-4 px-2 py-3 text-[3.5rem]'>CONTROL DE COMANDAS</h1>
+      <div className=' text-lg  text-green-950'>
+        <h1 className='m-4 px-2 py-3 text-lg md:text-[3.5rem]'>CONTROL DE COMANDAS</h1>
         <hr className='text-green-950' />
       </div>
 

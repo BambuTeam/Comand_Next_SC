@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -10,9 +10,9 @@
   background-size: 300% 300%;
   animation: gradient 15s ease infinite;
   height: 100vh;
-}
+} */
 
-.bg_screen1 {
+/* .bg_screen1 {
   background-image: url(../public/Images/bg_command.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,8 +28,8 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
-.Lottie_style {
+/* .Lottie_style {
   margin-left: -200px;
-}
+} */
