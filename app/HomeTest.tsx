@@ -45,7 +45,7 @@ const HomeTest = () => {
       })}
 
       <h1>{session?.data?.user?.name}</h1>
-      <button onClick={() => signOut()}>logout</button>
+      <button onClick={() => signOut()}>npm logout</button>
     </div>
   );
 };

@@ -5,8 +5,6 @@ import { Inter } from 'next/font/google';
 import { ReactQueryProvider } from './providers/ReactQueryProvider';
 import SessionProvider from './providers/SessionProvider';
 import { options as authOptions } from './api/auth/[...nextauth]/options';
-import LoginTest from './LoginTest';
-import HomeTest from './HomeTest';
 
 const inter = Inter({ subsets: ['latin'] });
 
