@@ -1,22 +1,21 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import Slide1 from '@/public/Images/slider/restaurant1.png';
 import Image from 'next/image';
 
-const SimpleCarousel = () => {
+function ImageSlider() {
   return (
     <Carousel>
       <div>
-        <Image src={Slide1} alt='Imagen1' />
+        <Image src='./Images/Slider/restaurant1.png' alt='Imagen 1' />
       </div>
       <div>
-        <Image src={Slide1} alt='Imagen1' />
+        <Image src='./Images/Slider/restaurant1.png' alt='Imagen 2' />
       </div>
       <div>
-        <Image src={Slide1} alt='Imagen1' />
+        <Image src='./Images/Slider/restaurant1.png' alt='Imagen 3' />
       </div>
     </Carousel>
   );
-};
+}
 
-export default SimpleCarousel;
+export default ImageSlider;

@@ -4,6 +4,7 @@ import { getServerSession } from 'next-auth';
 import { ReactQueryProvider } from '@/providers/ReactQueryProvider';
 import SessionProvider from '@/providers/SessionProvider';
 import { options as authOptions } from '@/api/auth/[...nextauth]/options';
+import Navbar from './components/navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Comandas',
@@ -15,6 +16,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang='en'>
       <body>
+        <Navbar />
         <SessionProvider session={session}>
           <ReactQueryProvider>{children}</ReactQueryProvider>
         </SessionProvider>
