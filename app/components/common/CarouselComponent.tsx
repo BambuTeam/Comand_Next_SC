@@ -13,7 +13,14 @@ const MyCarousel: React.FC<CarouselProps> = ({ images }) => {
     <Carousel autoPlay showThumbs={false} showStatus={false} className='home-carousel'>
       {images.map((imageUrl, index) => (
         <div key={index}>
-          <Image src={imageUrl} alt={`Image ${index}`} width={1000} height={1000} />
+          <Image
+            src={imageUrl}
+            alt={`Image ${index}`}
+            width={800}
+            height={1800}
+            layout='responsive'
+            objectFit='contain'
+          />
         </div>
       ))}
     </Carousel>

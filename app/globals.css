@@ -11,5 +11,7 @@ body {
 
 .bg-patter {
   background-image: url(../public/Images/slider/bg_patt.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #0d0d0d;
 }

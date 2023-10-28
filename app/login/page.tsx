@@ -9,13 +9,13 @@ const images = [
 
 function Login() {
   return (
-    <div className='grid  grid-cols-1 md:grid-cols-2'>
-      <div className=' bg-gray-200'>
-        <div className=' items-center justify-center'>
-          <Carousel images={images} />
-        </div>
+    <div className='fixed grid h-10 grid-cols-1 md:grid-cols-2'>
+      <div className='h-100 inline-block items-center justify-center align-middle '>
+        <Carousel images={images} />
       </div>
-      <div className='bg-patter items-center justify-center'></div>
+      <div className='bg-patter items-center justify-center'>
+        <h1>Formulario de inicio</h1>
+      </div>
     </div>
   );
 }
