@@ -1,5 +1,7 @@
 import React from 'react';
 import Carousel from '../components/common/CarouselComponent';
+import Image from 'next/image';
+import Waiter from '@/public/Images/slider/Waiter.svg';
 
 const images = [
   '/Images/slider/Restaurant-slide1.jpeg',
@@ -11,6 +13,7 @@ function Login() {
   return (
     <div className='fixed grid h-10 grid-cols-1 md:grid-cols-2'>
       <div className='h-100 inline-block items-center justify-center align-middle '>
+        <Image src={Waiter} className='waiter' />
         <Carousel images={images} />
       </div>
       <div className='bg-patter items-center justify-center'>
