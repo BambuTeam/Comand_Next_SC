@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 function Login() {
   return (
-    <div className='grid h-full grid-cols-1 md:grid-cols-2'>
-      <div className='relative h-full bg-gray-200'>
-        <div className='flex  w-full items-center justify-center'>
+    <div className='grid  grid-cols-1 md:grid-cols-2'>
+      <div className=' bg-gray-200'>
+        <div className=' fixed w-full items-center justify-center'>
           <Image
             src='/Images/slider/Restaurant-slide1.jpeg'
-            alt='Mi imagen'
+            alt='Mi Restaurante'
             layout='intrinsic'
-            width={1000}
-            height={1000}
+            width={900}
+            height={900}
           />
         </div>
       </div>
