@@ -25,7 +25,7 @@ function Login() {
               <input className='m-2 border p-2' type='email' />
               <label className='block'>Contraseña:</label>
               <input className='m-2 border p-2' type='password' />
-              <button className='rounded bg-blue-500 p-2 text-white' type='submit'>
+              <button className='rounded bg-blue-500 p-3 text-white' type='submit'>
                 Iniciar sesión
               </button>
             </div>
