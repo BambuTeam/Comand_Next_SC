@@ -8,35 +8,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* :root {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-  background-size: 300% 300%;
-  animation: gradient 15s ease infinite;
-  height: 100vh;
-} */
-
-/* .bg_screen1 {
-  background-image: url(../public/Images/bg_command.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-
-/* .Lottie_style {
-  margin-left: -200px;
-} */

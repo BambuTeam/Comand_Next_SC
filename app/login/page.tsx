@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-function LoginSesion() {
+function Login() {
   return (
     <div className='grid h-full grid-cols-1 md:grid-cols-2'>
       <div className='relative h-full bg-gray-200'>
@@ -12,13 +12,12 @@ function LoginSesion() {
             layout='intrinsic'
             width={1000}
             height={1000}
-            objectFit='cover'
           />
         </div>
       </div>
-      <div className='h-full bg-gray-300'>{/* Contenido de la segunda columna */}</div>
+      <div className='h-full bg-gray-300'></div>
     </div>
   );
 }
 
-export default LoginSesion;
+export default Login;

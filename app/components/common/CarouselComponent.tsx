@@ -6,13 +6,13 @@ function ImageSlider() {
   return (
     <Carousel>
       <div>
-        <Image src='./Images/Slider/restaurant1.png' alt='Imagen 1' />
+        <Image src='/Images/slider/restaurant1.png' alt='Imagen 1' />
       </div>
       <div>
-        <Image src='./Images/Slider/restaurant1.png' alt='Imagen 2' />
+        <Image src='/Images/slider/restaurant1.png' alt='Imagen 2' />
       </div>
       <div>
-        <Image src='./Images/Slider/restaurant1.png' alt='Imagen 3' />
+        <Image src='/Images/slider/restaurant1.png' alt='Imagen 3' />
       </div>
     </Carousel>
   );
