@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 /* :root {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   background-size: 400% 400%;
