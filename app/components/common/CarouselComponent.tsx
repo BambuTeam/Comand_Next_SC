@@ -10,16 +10,25 @@ interface CarouselProps {
 
 const MyCarousel: React.FC<CarouselProps> = ({ images }) => {
   return (
-    <Carousel autoPlay showThumbs={false} showStatus={false} className='home-carousel'>
+    <Carousel
+      autoPlay
+      showThumbs={false}
+      showStatus={false}
+      showArrows={false}
+      infiniteLoop={true}
+      interval={4000}
+      className='home-carousel'
+    >
       {images.map((imageUrl, index) => (
         <div key={index}>
           <Image
             src={imageUrl}
             alt={`Image ${index}`}
-            width={800}
+            width={1800}
             height={1800}
             layout='responsive'
             objectFit='contain'
+            quality={100}
           />
         </div>
       ))}
