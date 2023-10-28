@@ -1,4 +1,3 @@
-// import Link from 'next/link';
 import logo from '@/public/Images/Navbar/logoBambuWhite.svg';
 import isotipo from '@/public/Images/Navbar/bambuisotipo.svg';
 import Image from 'next/image';

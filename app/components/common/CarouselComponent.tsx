@@ -1,21 +1,23 @@
-import React from 'react';
+'use client';
+
 import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
 
-function ImageSlider() {
-  return (
-    <Carousel>
-      <div>
-        <Image src='/Images/slider/restaurant1.png' alt='Imagen 1' />
-      </div>
-      <div>
-        <Image src='/Images/slider/restaurant1.png' alt='Imagen 2' />
-      </div>
-      <div>
-        <Image src='/Images/slider/restaurant1.png' alt='Imagen 3' />
-      </div>
-    </Carousel>
-  );
+interface CarouselProps {
+  images: string[];
 }
 
-export default ImageSlider;
+const MyCarousel: React.FC<CarouselProps> = ({ images }) => {
+  return (
+    <Carousel autoPlay showThumbs={false} showStatus={false} className='home-carousel'>
+      {images.map((imageUrl, index) => (
+        <div key={index}>
+          <Image src={imageUrl} alt={`Image ${index}`} width={1000} height={1000} />
+        </div>
+      ))}
+    </Carousel>
+  );
+};
+
+export default MyCarousel;
