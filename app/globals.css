@@ -22,11 +22,11 @@ body {
 }
 
 .waiter {
-  width: 28%;
+  width: 20%;
   position: absolute;
   z-index: 999;
   margin-left: 40%;
-  margin-top: 100px;
+  margin-top: 250px;
   align-items: center;
 }
 
