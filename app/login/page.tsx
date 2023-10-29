@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from '../components/common/CarouselComponent';
 import Image from 'next/image';
 import Waiter from '@/public/Images/slider/Waiter.svg';
+import FormHome from '@/components/common/form';
 
 const images = [
   '/Images/slider/Restaurant-slide1.jpeg',
@@ -18,13 +19,11 @@ function Login() {
       </div>
       <div className='bg-patter items-center justify-center'>
         <h1>
-          <form className='flex h-screen items-center justify-center'>
+          <div className='flex h-screen items-center justify-center'>
             <div className='text-center text-white'>
-              <button className='rounded bg-blue-500 p-3 text-white' type='submit'>
-                Iniciar sesión
-              </button>
+              <FormHome />
             </div>
-          </form>
+          </div>
         </h1>
       </div>
     </div>

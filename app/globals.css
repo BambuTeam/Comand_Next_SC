@@ -2,11 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'fontblack';
+  src: url('/public/fonts/Montserrat-Black.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'fontplain';
+  src: url('/public/fonts/Montserrat-Thin.ttf') format('ttf');
+}
+
 html,
 body {
+  font-family: 'fontplain', sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+.font-black {
+  font-family: 'fontblack', sans-serif;
+  font-size: 40px;
 }
 
 .bg-patter {
