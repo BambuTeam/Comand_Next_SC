@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className=' ... fixed left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-gradient-to-r from-[#0d0d0d]  text-[#fefefe]'>
+    <nav className='fixed left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#0d0d0d] shadow-2xl'>
       <div className='ml-20 flex w-1/6 items-center'>
         <Image src={logo} height={50} width={150} alt='Logo Bambu' />
       </div>

@@ -20,11 +20,6 @@ function Login() {
         <h1>
           <form className='flex h-screen items-center justify-center'>
             <div className='text-center text-white'>
-              <h1>Let's explore with command to discover everything that is.</h1>
-              <label className='block'>Email:</label>
-              <input className='m-2 border p-2' type='email' />
-              <label className='block'>Contraseña:</label>
-              <input className='m-2 border p-2' type='password' />
               <button className='rounded bg-blue-500 p-3 text-white' type='submit'>
                 Iniciar sesión
               </button>

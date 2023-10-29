@@ -11,7 +11,10 @@ interface CarouselProps {
 const MyCarousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <Carousel
+      swipeable
+      emulateTouch
       autoPlay
+      autoFocus
       showThumbs={false}
       showStatus={false}
       showArrows={false}
@@ -24,11 +27,12 @@ const MyCarousel: React.FC<CarouselProps> = ({ images }) => {
           <Image
             src={imageUrl}
             alt={`Image ${index}`}
-            width={1800}
-            height={1800}
+            width={1000}
+            height={1000}
             layout='responsive'
             objectFit='contain'
             quality={100}
+            sizes='100vw'
           />
         </div>
       ))}

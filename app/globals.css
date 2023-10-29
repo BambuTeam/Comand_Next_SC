@@ -19,7 +19,6 @@ body {
 .home-carousel {
   position: relative;
   display: block;
-  margin-top: -250px;
 }
 
 .waiter {
