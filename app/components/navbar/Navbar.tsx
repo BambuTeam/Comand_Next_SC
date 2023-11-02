@@ -4,16 +4,12 @@ import Image from 'next/image';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className='fixed left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#000] shadow-2xl '>
-      <div className='ml-10 flex w-1/6 items-center'>
+    <nav className='fixed left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#000] shadow-2xl'>
+      <div className='ml-4 flex w-1/2 items-center md:ml-10 md:w-1/6'>
         <Image src={logo} height={50} width={150} alt='Logo Bambu' />
       </div>
-      <div className='w-2/3'>
-        {/* <Link href='/'>Inicio</Link>
-        <Link href='/acerca'>Acerca</Link>
-        <Link href='/contacto'>Contacto</Link> */}
-      </div>
-      <div className='mr-10 flex w-1/6 items-center justify-end'>
+      <div className='hidden md:flex md:w-2/3'></div>
+      <div className='mr-4 flex w-1/2 items-center justify-end md:mr-10 md:w-1/6'>
         <Image src={isotipo} height={5} width={30} alt='Isotipo Bambu' />
       </div>
     </nav>

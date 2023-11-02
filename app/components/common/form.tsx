@@ -22,7 +22,7 @@ const FormHome = () => {
 
   return (
     <div className='flex h-full min-h-screen w-screen items-center justify-center p-10'>
-      <div className=' mb-4 w-96 rounded bg-[#0d0d0d] bg-opacity-25 p-10 px-8 pb-8 pt-6 shadow-lg shadow-[#fefefe]'>
+      <div className=' mb-4 w-[32rem] rounded-[22px] bg-[#0d0d0d] bg-opacity-25 p-10 px-8 pb-8 pt-6 shadow-lg shadow-[#fefefe]'>
         <h1 className='flex items-center justify-center text-3xl text-white'>
           <span className='font-black text-[#59C8E4]'>Hello</span>, ¡ Welcome !
         </h1>
