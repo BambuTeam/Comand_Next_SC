@@ -71,7 +71,7 @@ const FormHome = () => {
           <div className='text-center'>
             <button
               type='submit'
-              className='focus:shadow-outline rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 focus:outline-none'
+              className='focus:shadow-outline hover:[#59C8E4] h-20 w-full rounded border-2 border-inherit bg-[#0d0d0d] px-4 py-2 font-bold text-white focus:outline-none'
             >
               Iniciar sesión
             </button>
