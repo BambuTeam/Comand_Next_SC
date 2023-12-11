@@ -34,3 +34,7 @@ database.env
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+#data_postgres
+postgres_data/
