@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { useSession } from 'next-auth/react';
-import LoginTest from '@/components/home/LoginTest';
 import Home from '@/components/home/Home';
 
 export default function Page() {
