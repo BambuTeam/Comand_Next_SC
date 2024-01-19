@@ -4,8 +4,7 @@
 .tablaConBorde th,
 .tablaConBorde td {
   /* Estilos para la tabla, th y td con borde */
-  border: 1px solid #17BC89;
+  border: 1px solid #17bc89;
   padding: 8px;
   /* Otros estilos... */
 }
-

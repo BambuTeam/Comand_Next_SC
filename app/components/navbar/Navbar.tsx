@@ -2,9 +2,7 @@ import logo from '@/public/Images/Navbar/logoBambuWhite.svg';
 import isotipo from '@/public/Images/Navbar/bambuisotipo.svg';
 import Image from 'next/image';
 
-
 const Navbar: React.FC = () => {
-
   // TODO: revisar el comportamiento de la barra
   return (
     <nav className='left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#000] shadow-2xl'>
