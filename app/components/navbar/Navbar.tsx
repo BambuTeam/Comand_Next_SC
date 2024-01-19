@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Navbar: React.FC = () => {
   // TODO: revisar el comportamiento de la barra
   return (
-    <nav className='left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#000] shadow-2xl'>
+    <nav className='left-0 right-0 top-0 z-10 flex h-20 items-center justify-between bg-[#04021af8] shadow-2xl'>
       <div className='ml-4 flex w-1/2 items-center md:ml-10 md:w-1/6'>
         <Image src={logo} height={50} width={150} alt='Logo Bambu' />
       </div>

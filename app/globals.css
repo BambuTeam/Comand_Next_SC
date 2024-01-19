@@ -29,7 +29,7 @@ body {
   background-image: url(../public/Images/slider/bg_patt.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #0d0d0d;
+  background-color: #2e2e2e;
 }
 
 .home-carousel {
@@ -44,6 +44,9 @@ body {
   margin-left: 40%;
   margin-top: 250px;
   align-items: center;
+}
+
+.slider_home {
 }
 
 .floating-image {

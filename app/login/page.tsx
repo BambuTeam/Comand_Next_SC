@@ -15,9 +15,11 @@ function Login() {
     <div className='fixed grid h-10 grid-cols-1 md:grid-cols-2'>
       <div className='h-100 inline-block items-center justify-center align-middle '>
         <Image src={Waiter} className='waiter floating-image' alt='Waiter' />
-        <Carousel images={images} />
+        <div className='slider_home backdrop-blur-sm'>
+          <Carousel images={images} />
+        </div>
       </div>
-      <div className='bg-patter items-center justify-center'>
+      <div className='bg-patter items-center justify-center backdrop-blur-sm'>
         <h1>
           <div className='flex h-screen items-center justify-center'>
             <div className='text-center text-white'>
