@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
-import { useSession } from 'next-auth/react';
+// import { useSession } from 'next-auth/react';
 import Home from '@/components/home/Home';
 
 export default function Page() {
-  const session = useSession();
+  // const session = useSession();
 
   return (
     <main>

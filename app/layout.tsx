@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 import { ReactQueryProvider } from '@/providers/ReactQueryProvider';
 import SessionProvider from '@/providers/SessionProvider';
-import { options as authOptions } from '@/api/auth/[...nextauth]/options';
+// import { options as authOptions } from '@/api/auth/[...nextauth]/options';
 import Navbar from './components/navbar/Navbar';
 
 export const metadata: Metadata = {
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const session = await getServerSession(authOptions);
+  // const session = await getServerSession(authOptions);
   return (
     <html lang='en'>
       <body className='block'>
         <Navbar />
-        <SessionProvider session={session}>
+        {/* <SessionProvider session={session}> */}
           <ReactQueryProvider>{children}</ReactQueryProvider>
-        </SessionProvider>
+        {/* </SessionProvider> */}
       </body>
     </html>
   );

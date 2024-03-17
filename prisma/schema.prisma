@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Restaurant {
+  id          Int        @id @default(autoincrement())
+  name        String
+  main_image  String
+  description String
+  open_time   String
+  close_time  String
+  created_at  DateTime   @default(now())
+  update_at   DateTime   @updatedAt
+  Comanda     Comanda[]
+  Employee    Employee[]
+  Menu        Menu[]
+}
+
+model Menu {
+  id            Int        @id @default(autoincrement())
+  id_restaurant Int
+  id_item       Int
+  created_at    DateTime   @default(now())
+  update_at     DateTime   @updatedAt
+  item          Item       @relation(fields: [id_item], references: [id])
+  restaurant    Restaurant @relation(fields: [id_restaurant], references: [id])
+}
+
+model Item {
+  id            Int             @id @default(autoincrement())
+  name          String
+  price         Float
+  description   String
+  main_image    String
+  images        String[]
+  created_at    DateTime        @default(now())
+  update_at     DateTime        @updatedAt
+  ComandaDetail ComandaDetail[]
+  Menu          Menu[]
+}
+
+model Client {
+  id      Int    @id @default(autoincrement())
+  nombre  String
+  address String
+  phone   String
+}
+
+model Employee {
+  id            Int        @id @default(autoincrement())
+  id_restaurant Int
+  name          String
+  cargo         String
+  cui           String     @unique
+  address       String
+  phone         String
+  Comanda       Comanda[]
+  Restaurant    Restaurant @relation(fields: [id_restaurant], references: [id])
+}
+
+model Comanda {
+  id             Int             @id @default(autoincrement())
+  id_sucursal    Int
+  id_employee    Int
+  dateTime       DateTime        @default(now())
+  dateTimeUpdate DateTime
+  Employee       Employee        @relation(fields: [id_employee], references: [id])
+  Restaurant     Restaurant      @relation(fields: [id_sucursal], references: [id])
+  ComandaDetail  ComandaDetail[]
+}
+
+model ComandaDetail {
+  id         Int     @id @default(autoincrement())
+  id_comanda Int
+  id_item    Int
+  amount     Int
+  Comanda    Comanda @relation(fields: [id_comanda], references: [id])
+  Item       Item    @relation(fields: [id_item], references: [id])
+}
+
+model Payment {
+  id         Int   @id @default(autoincrement())
+  id_comanda Int
+  amount     Float
+}
